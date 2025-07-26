@@ -1,0 +1,66 @@
+Project Overview
+
+MERN stack (MongoDB, Express.js, React.js, Node.js)
+PWA features: Service Worker API, Web App Manifest, Webpack
+Authentication: JWT (JSON Web Tokens) with 2FA (Two-Factor Authentication) via text message using Twilio
+Frontend: React.js with Vite, Tailwind CSS, and DaisyUI
+
+Workflow
+
+User signs up:
+User submits registration form
+Server generates JWT token and sends verification code via Twilio to user's phone number
+User verifies code, and server activates account
+User logs in:
+User submits login form
+Server verifies credentials and generates JWT token
+Server sends verification code via Twilio to user's phone number
+User verifies code, and server returns JWT token for authenticated access
+User logs out:
+User requests logout
+Server invalidates JWT token
+
+Directory Tree 
+
+Authentication-Project/
+├── backend/
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   └── userController.js
+│   ├── models/
+│   │   └── userModel.js
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   └── userRoutes.js
+│   ├── services/
+│   │   └── twilioService.js
+│   ├── utils/
+│   │   └── jwtUtils.js
+│   ├── app.js
+│   ├── server.js
+│   └── package.json
+├── frontend/
+│   ├── public/
+│   │   ├── index.html
+│   │   └── manifest.json
+│   └── src/
+│       ├── components/
+│       │   ├── Login.js
+│       │   ├── Logout.js
+│       │   └── Signup.js
+│       ├── hooks/
+│       │   └── useAuth.js
+│       ├── pages/
+│       │   ├── LoginPage.js
+│       │   └── SignupPage.js
+│       ├── services/
+│       │   └── apiService.js
+│       ├── utils/
+│       │   └── authUtils.js
+│       ├── App.js
+│       └── main.js
+│   └── vite.config.js
+├── shared/
+│   └── utils/
+│       └── constants.js
+└── package.json

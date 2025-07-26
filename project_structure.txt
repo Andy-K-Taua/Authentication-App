@@ -1,0 +1,50 @@
+Authentication-Project
+├── backend
+│   ├── app.js
+│   ├── controllers
+│   │   └── authController.js
+│   ├── models
+│   │   └── userModels.js
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── routes
+│   │   └── authRoutes.js
+│   ├── server.js
+│   ├── services
+│   │   └── twilioServices.js
+│   └── utils
+│       └── jwtUtils.js
+├── frontend
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── public
+│   │   ├── manifest.json
+│   │   └── vite.svg
+│   ├── src
+│   │   ├── App.css
+│   │   ├── App.jsx
+│   │   ├── assets
+│   │   │   └── react.svg
+│   │   ├── components
+│   │   │   ├── Login.jsx
+│   │   │   ├── Logout.jsx
+│   │   │   └── Signup.jsx
+│   │   ├── hooks
+│   │   │   └── useAuth.jsx
+│   │   ├── index.css
+│   │   ├── main.jsx
+│   │   ├── pages
+│   │   │   ├── LoginPage.jsx
+│   │   │   ├── LogoutPage.jsx
+│   │   │   └── SignupPage.jsx
+│   │   ├── services
+│   │   │   └── apiService.jsx
+│   │   └── utils
+│   │       └── authUtils.jsx
+│   └── vite.config.js
+├── package.json
+└── project_structure.txt
+
+15 directories, 32 files
