@@ -1,4 +1,5 @@
 Authentication-Project
+├── Authentication.txt
 ├── backend
 │   ├── app.js
 │   ├── controllers
@@ -47,4 +48,4 @@ Authentication-Project
 ├── package.json
 └── project_structure.txt
 
-15 directories, 32 files
+15 directories, 33 files
