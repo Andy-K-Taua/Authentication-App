@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npm run build:frontend && concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+    "build:frontend": "cd frontend && npm run build",
     "start:frontend": "cd frontend && npm run dev",
-    "start:backend": "cd backend && npm start",
-    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
+    "start:backend": "cd backend && npm start"
   },
   "keywords": [],
   "author": "",
