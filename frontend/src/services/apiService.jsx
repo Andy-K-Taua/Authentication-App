@@ -3,7 +3,9 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3000/api',
+  baseURL: process.env.NODE_ENV === 'production'
+    ? 'https://authentication-app-pisd.onrender.com' 
+    : 'http://localhost:3000',
 });
 
 const registerUser = async (username, password, phoneNumber) => {
